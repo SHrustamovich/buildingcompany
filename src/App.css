@@ -1,0 +1,97 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  
+  
+  /*------------------------------------*\
+    #GLOBAL-STYLES
+  \*------------------------------------*/
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+
+    padding: 0;
+    margin: 0;
+    font-family: "Mulish", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000;
+    background-color: rgb(147, 147, 155);
+    width: 100%;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .footer{
+    display: flex;
+    height: 70px;
+    background-color: rgb(101, 243, 19);
+  }
+  .footer_img{
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  .footer_text{
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #fff;
+  }
+  .footer_btn{
+    margin-left: 300px;
+    margin-top: 20px;
+    width: 70px;
+    height: 30px;
+    outline: none;
+    border-radius: 4px;
+  }
+  
+  /*------------------------------------*\
+    #HELPER / GLOBAL COMPONENTS
+  \*------------------------------------*/
+  
+  /* VISUALLY HIDING CODE */
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
