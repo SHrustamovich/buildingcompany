@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <div className="container">
        <div className="footer">
-         <img src={Photo} alt="photo" className="footer_img" />
+         <Image src={Photo} alt="photoCompany" className="footer_img" />
          <h3 className="footer_text">BUILDING</h3>
          <NavLink to='/home'>
          <button className="footer_btn">Home</button>
