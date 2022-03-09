@@ -12,7 +12,7 @@ const Home = () => {
   const [price,setPrice] = useState([])
   const [bank,setBank] = useState([])
   useEffect(() => {
-    fetch('http://localhost:9000/company')
+    fetch('https://buildinghous.herokuapp.com/company')
     .then(res => res.json())
     .then(data => setCompany(data))
   },[])
@@ -23,7 +23,7 @@ const Home = () => {
     setPrice([])
     setBank([])
     setComplex([])
-    fetch('http://localhost:9000/complex',{
+    fetch('https://buildinghous.herokuapp.com/complex',{
       method:'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ const handlyComplex =e => {
   if(e.target.value === 'choose') return setRoomID([])
   setComplexID(e.target.value)
   
-  fetch('http://localhost:9000/rooms',{
+  fetch('https://buildinghous.herokuapp.com/rooms',{
     method:'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -62,7 +62,7 @@ const handlyPrice =e => {
   if(e.target.value === 'choose') return setRoomID([])
   setRoomID(e.target.value)
 
-  fetch('http://localhost:9000/cal',{
+  fetch('https://buildinghous.herokuapp.com/cal',{
     method:'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -79,7 +79,7 @@ const handlyPrice =e => {
 
 const handlyDuration =e => {
   e.preventDefault()
-  fetch('http://localhost:9000/bank',{
+  fetch('https://buildinghous.herokuapp.com/bank',{
     method:'POST',
     headers: {
       'Content-Type': 'application/json'
