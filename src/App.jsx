@@ -4,13 +4,13 @@ import { NavLink } from 'react-router-dom';
 import Home from './pages/Home/Home'
 import Admin from './pages/Admin/Admin'
 import './App.css';
-import Photo from './image/building.png'
+import PhotoIcon from './image/building.png'
 function App() {
   return (
     <div className="App">
       <div className="container">
        <div className="footer">
-         <Image src={Photo} alt="photoCompany" className="footer_img" />
+         <img src={PhotoIcon} alt="photoCompany" className="footer_img" />
          <h3 className="footer_text">BUILDING</h3>
          <NavLink to='/home'>
          <button className="footer_btn">Home</button>
